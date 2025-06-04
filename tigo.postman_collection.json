@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "4ee5d1f6-9b5c-46e5-850d-122affba6a5a",
+		"name": "tigo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32908853"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get all usrs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/api/users"
+					},
+					"response": []
+				},
+				{
+					"name": "get users by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/api/users/2"
+					},
+					"response": []
+				},
+				{
+					"name": "get user by email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/email?email=eduardobalak2@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"email"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "eduardobalak2@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Josué3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"3"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "eduardobalak2@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"2"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "eduardobalak2@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "items",
+			"item": [
+				{
+					"name": "get all items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/api/items"
+					},
+					"response": []
+				},
+				{
+					"name": "create item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descripcion\": \"Olmeca\",\n    \"monto\": 1.0,\n    \"cantidadDisponible\": 3,\n    \"imagen\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/items"
+					},
+					"response": []
+				},
+				{
+					"name": "get items by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/api/items/1"
+					},
+					"response": []
+				},
+				{
+					"name": "update item by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Josué\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/items/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"items",
+								"2"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "eduardobalak2@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete item by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/items/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"items",
+								"2"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "eduardobalak2@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "get all carts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/api/cart"
+					},
+					"response": []
+				},
+				{
+					"name": "create cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": 1,\n  \"status\": \"PREORDER\",\n  \"items\": [\n    {\n      \"itemId\": 1,\n      \"quantity\": 1\n    },\n    {\n      \"itemId\": 2,\n      \"quantity\": 1\n    }\n  ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/cart"
+					},
+					"response": []
+				},
+				{
+					"name": "get cart by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/api/cart/1"
+					},
+					"response": []
+				},
+				{
+					"name": "get carts by userid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/api/cart/1"
+					},
+					"response": []
+				},
+				{
+					"name": "update item by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Josué\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/items/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"items",
+								"2"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "eduardobalak2@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete item by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvYmFsYWtjQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzQ5MDE5MjAzLCJleHAiOjE3NDkxMDU2MDN9.rkVPUwAEVFNXtFVp2KsTyt-qbX7LTr3c3u0HjaDEtkg"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/items/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"items",
+								"2"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "eduardobalak2@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombres\": \"Josué\",\n    \"apellidos\": \"Ramírez2\",\n    \"direccionEnvio\": \"Mi casa\",\n    \"email\": \"eduardobalak2@gmail.com\",\n    \"fechaNacimiento\": \"2005-09-19\",\n    \"password\": \"holamundo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"eduardobalakc@gmail.com\",\n    \"password\": \"holamundo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/auth/login"
+			},
+			"response": []
+		}
+	]
+}
