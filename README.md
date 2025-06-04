@@ -58,12 +58,13 @@ prueba-tigo
 cd carrito-deportivo
 ./gradlew clean build -x test
 ./gradlew bootRun
-
+```
 ### 2. Frontend
+```bash
 cd frontend
 npm install
 npm run dev
-
+```
 ---
 
 ## Nota Postman:
