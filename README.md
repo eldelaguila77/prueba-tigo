@@ -67,5 +67,6 @@ npm run dev
 ```
 ---
 
-## Nota Postman:
-Se adjuntó en la raíz del repositorio un Postman v2 con las llamadas de las APIs utilizadas
+## Notas:
+- Se adjuntó en la raíz del repositorio un Postman v2 con las llamadas de las APIs utilizadas
+- Se adjunta docker-compose.yaml con contenedor de MariaDB, el docker creará la base de datos, si se usa otro gestor que no sea el docker, asegurarse de crear la base de datos llamada deportes_db y modificar las credenciales en application.properties
